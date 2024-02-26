@@ -13,5 +13,7 @@ RUN apt-get update && apt-get install -y postgresql-client
 
 EXPOSE 8000
 
+
+
 # Run the app:
 CMD python manage.py runserver
