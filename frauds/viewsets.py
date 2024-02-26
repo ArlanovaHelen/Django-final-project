@@ -1,4 +1,4 @@
-# from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 from frauds.serializers import (
     FraudSerializer,
@@ -21,7 +21,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from frauds.filters import FraudFilter
 from rest_framework.filters import OrderingFilter
 
-
+from rest_framework.response import Response
 from workproject.authentication import MyCustomAuthentication
 
 

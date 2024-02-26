@@ -1,0 +1,17 @@
+services:
+  web:
+    container_name: web
+    build:
+        context: .
+        dockerfile: Dockerfile
+    ports:
+      - "8001:8000"
+  db:
+    image: "postgres:15"
+    ports:
+      - "54322:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+
