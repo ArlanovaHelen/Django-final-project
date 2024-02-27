@@ -1,5 +1,6 @@
 from .fraud import Fraud
 from .district import District
+from .category import Category
 from .bs_location import BSLocation
 from .control import Control
 from .imei_history import Imei
@@ -16,4 +17,5 @@ __all__ = [
     "PhonenumberFile",
     "Phonenumber",
     "Prison",
+    "Category"
 ]
