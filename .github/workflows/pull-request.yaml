@@ -28,3 +28,7 @@ jobs:
       - name: Check migrations
         run: |
           python manage.py makemigrations --check --dry-run
+     # - name: Code coverage
+     #   run: |
+     #     coverage run --source='.' manage.py test
+     #     coverage report --fail-under=80
